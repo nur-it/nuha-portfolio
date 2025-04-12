@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: "Magilio";
+  src: url("../assets/fonts/magilio.ttf") format("truetype");
+}
+
+/* Global Styles */
+
+:root {
+  --background: #f2ebe2;
+  --secondary: #a76e4f;
+  --olive-800: #414535;
+  --cream-100: #f2ebe2;
+  --cream-200: #e4d5c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--background);
+  color: var(--olive-800);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Magilio", serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+header {
+  padding: 0.782rem 0;
+  background-color: var(--cream-100);
+  border-bottom: 1px solid var(--cream-200);
+  max-height: 96px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    ul {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+
+      li {
+        a {
+          color: var(--olive-800);
+          font-weight: 500;
+          font-size: clamp(1rem, 2.5vw, 1.25rem);
+        }
+      }
+    }
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--olive-800);
+  font-size: 1.5rem;
+}
+
+/* responsive from under 1024px */
+@media (max-width: 1023px) {
+  .nav_links {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+  }
+}
