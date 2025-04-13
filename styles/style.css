@@ -284,6 +284,12 @@ header {
 /* portfolio section end */
 
 /* work section start */
+#work {
+  margin-bottom: -156px;
+  position: relative;
+  z-index: 999;
+}
+
 .work_wapper {
   display: flex;
   align-items: start;
@@ -360,8 +366,70 @@ header {
     background: var(--secondary);
   }
 }
+
+.submit-button {
+  margin-top: 10px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 32px;
+  background-color: #f2ebe2;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #414535;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: #dbd7d1;
+}
 /* work section end */
 
+/* Footer section start */
+#footer {
+  background-color: #414535;
+  padding: 248px 128px 64px 128px;
+}
+.footer-main-div {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.address-and-contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.address-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.address-text {
+  font-family: var(--magilio);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #e4d5c4;
+}
+.address-des {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  max-width: 384px;
+  color: #e4d5c4;
+}
+.address-des a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  max-width: 384px;
+  color: #e4d5c4;
+}
 /* responsive from under 1024px */
 @media (max-width: 1023.99px) {
   .nav_links {
