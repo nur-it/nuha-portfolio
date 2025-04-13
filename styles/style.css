@@ -298,9 +298,17 @@ header {
 .work_heading {
   font-family: var(--magilio);
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 64px;
+  line-height: 100%;
+  max-width: 220px;
+  color: #f2ebe2;
 }
 
+.number_email_input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
 .work_right {
   width: 55%;
 }
@@ -312,13 +320,17 @@ header {
   position: relative;
   border-radius: 1rem;
   margin-bottom: 17px;
+  font-size: 18px;
+
   input {
     height: 48px;
     width: 100%;
     outline: none;
     border: none;
-
+    color: #f2ebe2;
+    padding: 0px 8px;
     background: none;
+    font-size: 16px;
     &:focus {
       outline: none;
     }
@@ -326,10 +338,13 @@ header {
 
   textarea {
     width: 100%;
-    height: 96px;
+    height: 80px;
     outline: none;
     border: none;
-
+    color: #f2ebe2;
+    padding: 16px 8px 8px;
+    resize: none;
+    font-size: 16px;
     background: none;
     &:focus {
       outline: none;
