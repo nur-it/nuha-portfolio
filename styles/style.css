@@ -176,7 +176,7 @@ header {
   margin-bottom: 1.5rem;
   margin-bottom: 3rem;
   position: relative;
-  z-index: 999;
+  z-index: 1;
 }
 .hero_btns {
   display: flex;
@@ -194,7 +194,7 @@ header {
   background: var(--olive-800);
   border-radius: 999px;
   position: relative;
-  z-index: 999;
+  z-index: 1;
   transition: background-color 0.3s ease, color 0.3s ease;
   border: 1px solid transparent;
 }
@@ -218,7 +218,7 @@ header {
   border: 1px solid var(--olive-800);
   border-radius: 999px;
   position: relative;
-  z-index: 999;
+  z-index: 1;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .hero_btn2:hover {
@@ -459,9 +459,11 @@ header {
   font-weight: 500;
   color: #414535;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .submit-button:hover {
-  background-color: #dbd7d1;
+  color: var(--cream-100);
+  background: var(--olive-800);
 }
 /* work section end */
 
