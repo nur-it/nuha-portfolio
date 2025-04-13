@@ -27,6 +27,9 @@ body {
   color: var(--olive-800);
   font-size: 16px;
   line-height: 1.5;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -129,11 +132,12 @@ header {
   top: 0;
   left: 0;
   z-index: -1;
+  height: auto;
 }
 .bottom-tree {
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 30%;
   z-index: -1;
 }
 
@@ -147,13 +151,15 @@ header {
   display: flex;
   align-items: centers;
 }
+.sm-hero-avatar {
+  display: none;
+}
 .hero_left {
   max-width: 584px;
 }
 .hero_heading {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   line-height: 1.2;
-
   font-family: var(--magilio);
   font-weight: 400;
   color: var(--olive-800);
@@ -163,21 +169,32 @@ header {
 .hero_btns {
   display: flex;
   gap: 8px;
-  font-weight: 500;
-  font-size: 1.25rem;
-  a {
-    padding: 1.5rem 2rem;
-    display: inline-block;
-    border-radius: 50px;
-  }
 }
 .hero_btn1 {
+  height: 62px;
+  padding: 0px 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
   color: var(--cream-100);
   background: var(--olive-800);
+  border-radius: 999px;
 }
 .hero_btn2 {
+  height: 62px;
+  padding: 0px 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-size: 1.25rem;
   color: var(--olive-800);
   border: 1px solid var(--olive-800);
+  border-radius: 999px;
 }
 /* hero section end */
 
@@ -483,5 +500,64 @@ header {
 
   .rainbow {
     display: none;
+  }
+  .address-and-contact {
+    gap: 8px;
+  }
+  .footer-main-div {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* hero start */
+  #hero {
+    padding: 64px 0px 0px 0px;
+  }
+  .hero_wapper {
+    flex-direction: column;
+  }
+  .hero_heading {
+    font-size: 40px;
+    line-height: 100%;
+  }
+  .hero_img_container {
+    display: none;
+  }
+  .hero_btn1 {
+    height: 40px;
+    font-size: 16px;
+    padding: 0px 24px;
+  }
+  .hero_btn2 {
+    height: 40px;
+    font-size: 16px;
+    padding: 0px 24px;
+  }
+  .top-leaf img {
+    height: 107px;
+  }
+  .sm-hero-avatar {
+    display: block;
+  }
+  .bottom-tree {
+    display: none;
+  }
+  .sm-hero-avatar img {
+    width: 100%;
+    max-height: 340px;
+  }
+  /* hero End */
+  .footer-main-div {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .address-and-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 48px;
   }
 }
