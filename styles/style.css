@@ -329,6 +329,7 @@ header {
   border-radius: 48px;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  cursor: pointer;
   img {
     width: 100%;
   }
@@ -513,6 +514,40 @@ header {
 .sidebar_menu {
   display: none;
 }
+
+/* Lightbox design start here */
+.lightbox {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.lightbox.hidden {
+  display: none;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* responsive from under 1024px */
 @media (max-width: 1023.99px) {
   .nav_links {

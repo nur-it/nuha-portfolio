@@ -1,304 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuha - Portfolio</title>
+    <meta
+      name="description"
+      content="Nuha's portfolio showcasing projects and skills."
+    />
+    <meta
+      name="keywords"
+      content="Nuha, portfolio, projects, skills, web development, design, programming"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/brand/brand_logo.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/image/brand/brand_logo.svg"
+      type="image/svg+xml"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuha - Portfolio</title>
-  <meta name="description" content="Nuha's portfolio showcasing projects and skills." />
-  <meta name="keywords" content="Nuha, portfolio, projects, skills, web development, design, programming" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="shortcut icon" href="./assets/image/brand/brand_logo.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./assets/image/brand/brand_logo.svg" type="image/svg+xml" />
-</head>
-
-<body>
-  <header>
-    <nav class="container">
-      <a href="#" class="logo">
-        <img src="./assets/image/brand/brand_logo.svg" alt="Nuha Logo" />
-      </a>
-      <ul class="nav_links">
-        <li><a class="nav_item" href="#about">About</a></li>
-        <li><a class="nav_item" href="#portfolio">Portfolio</a></li>
-        <li><a class="nav_item" href="#work">Let's Work Together</a></li>
-      </ul>
-
-      <!-- Mobile Menu -->
-      <div class="mobile_menu hidden">
-        <button class="hamburger">
-          <img src="./assets/image/brand/hamburger.svg" alt="menu" />
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Sidebar Menu -->
-  <div class="sidebar_menu hidden" id="sidebarMenu">
-    <div>
-      <div class="sidebar-header">
+  <body>
+    <header>
+      <nav class="container">
         <a href="#" class="logo">
           <img src="./assets/image/brand/brand_logo.svg" alt="Nuha Logo" />
         </a>
+        <ul class="nav_links">
+          <li><a class="nav_item" href="#about">About</a></li>
+          <li><a class="nav_item" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav_item" href="#work">Let's Work Together</a></li>
+        </ul>
+
+        <!-- Mobile Menu -->
+        <div class="mobile_menu hidden">
+          <button class="hamburger">
+            <img src="./assets/image/brand/hamburger.svg" alt="menu" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar_menu hidden" id="sidebarMenu">
+      <div>
+        <div class="sidebar-header">
+          <a href="#" class="logo">
+            <img src="./assets/image/brand/brand_logo.svg" alt="Nuha Logo" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#work">Let's Work Together</a></li>
+        </ul>
       </div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#work">Let's Work Together</a></li>
-      </ul>
     </div>
-  </div>
 
-  <!-- Overlay -->
-  <div class="overlay hidden" id="overlay"></div>
+    <!-- Overlay -->
+    <div class="overlay hidden" id="overlay"></div>
 
-  <main>
-    <section id="hero">
-      <div class="hero_img_container">
-        <div class="hero_img_div">
-          <img class="hero_img" src="./assets/image/brand/hero.svg" alt="" />
-        </div>
-      </div>
-      <div class="top-leaf">
-        <img src="./assets/image/hero-shapes/top-leaf.svg" alt="top-leaf" />
-      </div>
-      <div class="bottom-tree">
-        <img src="./assets/image/hero-shapes/hero-bottom-tree.svg" alt="bottom-tree" />
-      </div>
-      <div class="for-hero-container">
-        <div class="hero_wapper">
-          <div class="hero_left">
-            <h1 class="hero_heading">
-              Designing Visual <br />
-              Stories That Speak <br />
-              Louder Than Words
-            </h1>
-            <div class="hero_btns">
-              <a class="hero_btn1"> Portfolios </a>
-              <a class="hero_btn2"> Let’s Work Together </a>
-            </div>
-          </div>
-          <div class="sm-hero-avatar">
-            <img src="./assets/image/hero-shapes/sm-hero-avatar.svg" alt="sm-hero-avatar" />
+    <main>
+      <section id="hero">
+        <div class="hero_img_container">
+          <div class="hero_img_div">
+            <img class="hero_img" src="./assets/image/brand/hero.svg" alt="" />
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="rainbow">
-        <img src="./assets/image/brand/about-shape-behind-subject.svg" alt="" />
-      </div>
-      <div class="left_top_shape">
-        <img src="./assets/image/about-shapes/top-left-crnr-sp.svg" alt="" />
-      </div>
-      <div class="right_top_shape">
-        <img src="./assets/image/about-shapes/top-right-crnr-sp.svg" alt="" />
-      </div>
-      <div class="right_bottom_shape">
-        <img src="./assets/image/about-shapes/bottom-right-crnr-sp.svg" alt="" />
-      </div>
-      <div class="container">
-        <div class="about_wrapper">
-          <div class="about_left">
-            <img src="./assets/image/brand/about-subject.svg" alt="" />
-          </div>
-          <div class="about_right">
-            <h2 class="section_heading">Hey, I’m Nuha!</h2>
-            <p class="about_sub">
-              the creative behind Created By Nuha, where design meets
-              storytelling to bring ideas to life.
-            </p>
-            <p class="about_text1">
-              As a multidisciplinary content creator and graphic designer, I
-              specialize in crafting visuals that resonate across digital
-              platforms. From social media content to branded assets, I blend
-              aesthetics with strategy to create meaningful, scroll-stopping
-              work. My collaborations include brands like Veil&Co, Muzz App,
-              and Standout Boutique, where I’ve delivered everything from
-              campaign visuals to custom graphics.
-            </p>
-            <p class="about_text2">
-              Whether I’m designing, directing shoots, or developing creative
-              concepts, I bring a distinct visual style and attention to
-              detail to every project. With a passion for authenticity and
-              connection, I’ve built a community that values creativity,
-              purpose, and beautiful design.
-            </p>
-          </div>
+        <div class="top-leaf">
+          <img src="./assets/image/hero-shapes/top-leaf.svg" alt="top-leaf" />
         </div>
-      </div>
-    </section>
-
-    <section id="portfolio">
-      <div class="container">
-        <h2 class="section_heading">My Portfolios</h2>
-        <div class="portfolios_wrapper">
-          <div class="portfolio_left">
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-1.webp" alt="" />
+        <div class="bottom-tree">
+          <img
+            src="./assets/image/hero-shapes/hero-bottom-tree.svg"
+            alt="bottom-tree"
+          />
+        </div>
+        <div class="for-hero-container">
+          <div class="hero_wapper">
+            <div class="hero_left">
+              <h1 class="hero_heading">
+                Designing Visual <br />
+                Stories That Speak <br />
+                Louder Than Words
+              </h1>
+              <div class="hero_btns">
+                <a class="hero_btn1"> Portfolios </a>
+                <a class="hero_btn2"> Let’s Work Together </a>
               </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
             </div>
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-2.webp" alt="" />
-              </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
-            </div>
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-3.webp" alt="" />
-              </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
-            </div>
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-4.webp" alt="" />
-              </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
-            </div>
-          </div>
-          <div class="portfolio_right">
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-4.webp" alt="" />
-              </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
-            </div>
-
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-3.webp" alt="" />
-              </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
-            </div>
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-2.webp" alt="" />
-              </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
-            </div>
-            <div class="portfolios_card">
-              <div class="portfolios_card_img_div">
-                <img src="./assets/image/portfolio/portfolio-1.webp" alt="" />
-              </div>
-              <h5 class="portfolios_card_heading">
-                UI Design for Cargo Delivery Company
-              </h5>
-              <p class="portfolios_card_text">2025</p>
+            <div class="sm-hero-avatar">
+              <img
+                src="./assets/image/hero-shapes/sm-hero-avatar.svg"
+                alt="sm-hero-avatar"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="work">
-      <div class="container">
-        <div class="work_wapper">
-          <div class="work_left">
-            <h2 class="work_heading">Let’s Work Together</h2>
-          </div>
-          <div class="work_right">
-            <div class="input_div">
-              <label class="input" for="name">
-                <span class="placeholder">Name</span>
-                <input type="text" name="name" id="name" />
-              </label>
-            </div>
-            <div class="number_email_input">
-              <label class="input" for="number">
-                <span class="placeholder">Phone Number</span>
-                <input type="text" name="number" id="name" />
-              </label>
-              <label class="input" for="email">
-                <span class="placeholder">Email Address</span>
-                <input type="text" name="email" id="name" />
-              </label>
-            </div>
-            <div class="message_inp_div">
-              <label class="input" for="text">
-                <span class="placeholder">Message</span>
-                <textarea name="" id=""></textarea>
-              </label>
-            </div>
-            <button class="submit-button">Submit</button>
-          </div>
-          <div class="work-top-leaf">
-            <img src="./assets/image/brand/work-top-leaf.svg" alt="work-top-leaf" />
-          </div>
-          <div class="work-bottom-leaf">
-            <img src="./assets/image/brand/work-bottom-leaf.svg" alt="work-bottom-leaf" />
-          </div>
+      <section id="about">
+        <div class="rainbow">
+          <img
+            src="./assets/image/brand/about-shape-behind-subject.svg"
+            alt=""
+          />
         </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-main-div">
-        <div class="address-and-contact">
-          <div class="address-footer">
-            <h4 class="address-text">Address:</h4>
-            <p class="address-des">
-              12 Jalan Bunga Raya, Taman Seri Damai, 43000 Kajang, Selangor,
-              Malaysia
-            </p>
-          </div>
-          <div class="address-footer">
-            <h4 class="address-text">Contact:</h4>
-            <div>
-              <p class="address-des">
-                <a href="tel:+60123456789">+60 12-345 6789</a>
+        <div class="left_top_shape">
+          <img src="./assets/image/about-shapes/top-left-crnr-sp.svg" alt="" />
+        </div>
+        <div class="right_top_shape">
+          <img src="./assets/image/about-shapes/top-right-crnr-sp.svg" alt="" />
+        </div>
+        <div class="right_bottom_shape">
+          <img
+            src="./assets/image/about-shapes/bottom-right-crnr-sp.svg"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div class="about_wrapper">
+            <div class="about_left">
+              <img src="./assets/image/brand/about-subject.svg" alt="" />
+            </div>
+            <div class="about_right">
+              <h2 class="section_heading">Hey, I’m Nuha!</h2>
+              <p class="about_sub">
+                the creative behind Created By Nuha, where design meets
+                storytelling to bring ideas to life.
               </p>
-              <p class="address-des">
-                <a href="mailto:info@createdbynuha.com">info@createdbynuha.com</a>
+              <p class="about_text1">
+                As a multidisciplinary content creator and graphic designer, I
+                specialize in crafting visuals that resonate across digital
+                platforms. From social media content to branded assets, I blend
+                aesthetics with strategy to create meaningful, scroll-stopping
+                work. My collaborations include brands like Veil&Co, Muzz App,
+                and Standout Boutique, where I’ve delivered everything from
+                campaign visuals to custom graphics.
+              </p>
+              <p class="about_text2">
+                Whether I’m designing, directing shoots, or developing creative
+                concepts, I bring a distinct visual style and attention to
+                detail to every project. With a passion for authenticity and
+                connection, I’ve built a community that values creativity,
+                purpose, and beautiful design.
               </p>
             </div>
           </div>
         </div>
-        <div class="social-media">
-          <a href="#">
-            <img src="./assets/icon/dribbble.svg" alt="dribbble" />
-          </a>
-          <a href="#">
-            <img src="./assets/icon/behance.svg" alt="behance" />
-          </a>
-          <a href="#">
-            <img src="./assets/icon/instagram.svg" alt="instagram" />
-          </a>
-          <a href="#">
-            <img src="./assets/icon/facebook.svg" alt="facebook" />
-          </a>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="section_heading">My Portfolios</h2>
+          <div class="portfolios_wrapper">
+            <div class="portfolio_left">
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-1.webp"
+                    alt="portfolio-1"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-2.webp"
+                    alt="portfolio-2"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-3.webp"
+                    alt="portfolio-3"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-4.webp"
+                    alt="portfolio-4"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+            </div>
+            <div class="portfolio_right">
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-4.webp"
+                    alt="portfolio-5"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-3.webp"
+                    alt="portfolio-3-2"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-2.webp"
+                    alt="portfolio-2-2"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+              <div class="portfolios_card">
+                <div class="portfolios_card_img_div">
+                  <img
+                    src="./assets/image/portfolio/portfolio-1.webp"
+                    alt="portfolio-1-2"
+                  />
+                </div>
+                <h5 class="portfolios_card_heading">
+                  UI Design for Cargo Delivery Company
+                </h5>
+                <p class="portfolios_card_text">2025</p>
+              </div>
+            </div>
+          </div>
+          <!-- Lightbox Modal -->
+          <div id="lightbox" class="lightbox hidden">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" />
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="container">
+          <div class="work_wapper">
+            <div class="work_left">
+              <h2 class="work_heading">Let’s Work Together</h2>
+            </div>
+            <div class="work_right">
+              <div class="input_div">
+                <label class="input" for="name">
+                  <span class="placeholder">Name</span>
+                  <input type="text" name="name" id="name" />
+                </label>
+              </div>
+              <div class="number_email_input">
+                <label class="input" for="number">
+                  <span class="placeholder">Phone Number</span>
+                  <input type="text" name="number" id="name" />
+                </label>
+                <label class="input" for="email">
+                  <span class="placeholder">Email Address</span>
+                  <input type="text" name="email" id="name" />
+                </label>
+              </div>
+              <div class="message_inp_div">
+                <label class="input" for="text">
+                  <span class="placeholder">Message</span>
+                  <textarea name="" id=""></textarea>
+                </label>
+              </div>
+              <button class="submit-button">Submit</button>
+            </div>
+            <div class="work-top-leaf">
+              <img
+                src="./assets/image/brand/work-top-leaf.svg"
+                alt="work-top-leaf"
+              />
+            </div>
+            <div class="work-bottom-leaf">
+              <img
+                src="./assets/image/brand/work-bottom-leaf.svg"
+                alt="work-bottom-leaf"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-main-div">
+          <div class="address-and-contact">
+            <div class="address-footer">
+              <h4 class="address-text">Address:</h4>
+              <p class="address-des">
+                12 Jalan Bunga Raya, Taman Seri Damai, 43000 Kajang, Selangor,
+                Malaysia
+              </p>
+            </div>
+            <div class="address-footer">
+              <h4 class="address-text">Contact:</h4>
+              <div>
+                <p class="address-des">
+                  <a href="tel:+60123456789">+60 12-345 6789</a>
+                </p>
+                <p class="address-des">
+                  <a href="mailto:info@createdbynuha.com"
+                    >info@createdbynuha.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="social-media">
+            <a href="#">
+              <img src="./assets/icon/dribbble.svg" alt="dribbble" />
+            </a>
+            <a href="#">
+              <img src="./assets/icon/behance.svg" alt="behance" />
+            </a>
+            <a href="#">
+              <img src="./assets/icon/instagram.svg" alt="instagram" />
+            </a>
+            <a href="#">
+              <img src="./assets/icon/facebook.svg" alt="facebook" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+    <script src="./js/lightbox.js"></script>
+  </body>
 </html>
