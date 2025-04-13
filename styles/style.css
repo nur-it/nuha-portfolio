@@ -21,6 +21,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   background-color: var(--background);
@@ -276,7 +280,7 @@ header {
 /* about section end */
 
 /* portfolio section start */
-#portfolios {
+#portfolio {
   padding: 8rem 0;
   h2 {
     margin-bottom: 3rem;
