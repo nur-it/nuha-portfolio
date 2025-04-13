@@ -391,7 +391,7 @@ header {
 /* Footer section start */
 #footer {
   background-color: #414535;
-  padding: 248px 128px 64px 128px;
+  padding: 248px 0px 64px 0px;
 }
 .footer-main-div {
   display: flex;
@@ -399,7 +399,6 @@ header {
   justify-content: space-between;
 }
 .address-and-contact {
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -429,6 +428,11 @@ header {
   line-height: 100%;
   max-width: 384px;
   color: #e4d5c4;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 /* responsive from under 1024px */
 @media (max-width: 1023.99px) {
