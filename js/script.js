@@ -1,13 +1,27 @@
-const headerOpenBtn = document.querySelector(".mobile_menu");
-const headerCloseBtn = document.querySelector(".mobile_nav_close_btn");
-const mobileNav = document.querySelector(".mobile_menu_overlay");
+const hamburger = document.querySelector('.hamburger');
+const sidebarMenu = document.getElementById('sidebarMenu');
+const overlay = document.getElementById('overlay');
 
-headerOpenBtn.addEventListener("click", () => {
-  console.log("ok", mobileNav);
-  mobileNav.style.display = "block";
+// ✅ Open Menu
+hamburger.addEventListener('click', () => {
+  sidebarMenu.classList.remove('hidden');
+  sidebarMenu.classList.add('active');
+  overlay.classList.remove('hidden');
 });
 
-headerCloseBtn.addEventListener("click", () => {
-  console.log("ok", mobileNav);
-  mobileNav.style.display = "none";
+// ✅ Close Menu on Overlay Click
+overlay.addEventListener('click', () => {
+  sidebarMenu.classList.remove('active');
+  sidebarMenu.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
+
+// ✅ Close Menu on Nav Link Click
+const menuLinks = sidebarMenu.querySelectorAll('a');
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    sidebarMenu.classList.remove('active');
+    sidebarMenu.classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
 });
