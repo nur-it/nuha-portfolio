@@ -175,6 +175,8 @@ header {
   color: var(--olive-800);
   margin-bottom: 1.5rem;
   margin-bottom: 3rem;
+  position: relative;
+  z-index: 999;
 }
 .hero_btns {
   display: flex;
@@ -191,6 +193,16 @@ header {
   color: var(--cream-100);
   background: var(--olive-800);
   border-radius: 999px;
+  position: relative;
+  z-index: 999;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid transparent;
+}
+.hero_btn1:hover {
+  background-color: #f2ebe2;
+  color: #414535;
+  border: 1px solid var(--olive-800);
+  border-radius: 999px;
 }
 .hero_btn2 {
   height: 62px;
@@ -205,6 +217,13 @@ header {
   color: var(--olive-800);
   border: 1px solid var(--olive-800);
   border-radius: 999px;
+  position: relative;
+  z-index: 999;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.hero_btn2:hover {
+  color: var(--cream-100);
+  background: var(--olive-800);
 }
 /* hero section end */
 
@@ -655,7 +674,7 @@ header {
     width: 100%;
     object-position: center;
     object-fit: cover;
-    margin-top: -80px;
+    margin-top: -120px;
   }
   /* hero End */
 
