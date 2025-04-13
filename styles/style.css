@@ -119,6 +119,11 @@ header {
   position: relative;
   padding: 256px 0;
 }
+.for-hero-container {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 .hero_img_div {
   width: 100%;
   height: auto;
@@ -598,6 +603,11 @@ header {
 
   #hero {
     padding: 64px 0px 0px 0px;
+  }
+  .for-hero-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .hero_wapper {
     flex-direction: column;
