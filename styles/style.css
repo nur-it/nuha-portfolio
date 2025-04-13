@@ -481,6 +481,9 @@ header {
   align-items: center;
   gap: 12px;
 }
+.sidebar_menu {
+  display: none;
+}
 /* responsive from under 1024px */
 @media (max-width: 1023.99px) {
   .nav_links {
@@ -488,6 +491,52 @@ header {
   }
   .mobile_menu {
     display: block;
+  }
+
+  /* Sidebar Styles */
+  .sidebar_menu {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #f2ebe2;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+  }
+  .sidebar-header {
+    height: 55px;
+    border-bottom: 1px solid #e4d5c4;
+    padding: 20px;
+  }
+  .sidebar_menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 16px 16px 16px 24px;
+  }
+
+  .sidebar_menu ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .sidebar_menu.active {
+    transform: translateX(0);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 90;
   }
 
   /* hero section start */
