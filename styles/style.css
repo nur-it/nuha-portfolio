@@ -479,6 +479,10 @@ header {
     position: relative;
     padding: 4rem 0 25rem 0;
   }
+  .hero_left {
+    max-width: 584px;
+    padding: 0px 16px;
+  }
   /* hero section end */
 
   /* about section start */
@@ -526,6 +530,7 @@ header {
 
 @media (max-width: 768px) {
   /* hero start */
+
   #hero {
     padding: 64px 0px 0px 0px;
   }
@@ -552,6 +557,7 @@ header {
   .top-leaf img {
     height: 107px;
   }
+
   .sm-hero-avatar {
     display: block;
   }
@@ -560,7 +566,9 @@ header {
   }
   .sm-hero-avatar img {
     width: 100%;
-    max-height: 340px;
+
+    object-position: center;
+    object-fit: cover;
   }
   /* hero End */
 
