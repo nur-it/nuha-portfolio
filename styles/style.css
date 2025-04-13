@@ -122,6 +122,7 @@ header {
 #hero {
   position: relative;
   padding: 256px 0;
+  overflow: hidden;
 }
 .for-hero-container {
   max-width: 1184px;
@@ -601,7 +602,14 @@ header {
     gap: 8px;
   }
 }
-
+@media (min-width: 769px) and (max-width: 1100px) {
+  #hero {
+    padding: 200px 0px;
+  }
+  .hero_img_div {
+    margin-right: -180px;
+  }
+}
 @media (max-width: 768px) {
   /* hero start */
 
@@ -645,9 +653,9 @@ header {
   }
   .sm-hero-avatar img {
     width: 100%;
-
     object-position: center;
     object-fit: cover;
+    margin-top: -80px;
   }
   /* hero End */
 
