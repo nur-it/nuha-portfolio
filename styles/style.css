@@ -482,7 +482,24 @@ header {
 
   /* about section start */
   #about {
-    padding: 4rem 0;
+    padding-top: 4rem;
+    overflow: hidden;
+  }
+  .about_wrapper {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+  }
+  .about_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .about_right {
+    padding-bottom: 4rem;
+  }
+  .rainbow {
+    display: none;
   }
   /* about section end */
 
@@ -498,9 +515,6 @@ header {
   }
   /* My Portfolios section end */
 
-  .rainbow {
-    display: none;
-  }
   .address-and-contact {
     gap: 8px;
   }
@@ -548,6 +562,48 @@ header {
     max-height: 340px;
   }
   /* hero End */
+
+  /* about start */
+  .about_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 48px;
+  }
+  .about_left {
+    width: 100%;
+  }
+  .about_right {
+    width: 100%;
+    h2 {
+      margin-bottom: 24px;
+      font-size: 32px;
+    }
+  }
+  .about_sub {
+    padding-bottom: 24px;
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .about_text1 {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .about_text2 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .left_top_shape img {
+    width: 90px;
+  }
+  .right_top_shape img {
+    width: 80px;
+  }
+  .right_bottom_shape img {
+    width: 95px;
+  }
+  /* about end */
   .footer-main-div {
     display: flex;
     align-items: start;
