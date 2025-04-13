@@ -296,7 +296,7 @@ header {
 .portfolios_card_img_div {
   width: 100%;
   background-repeat: no-repeat;
-  border-radius: 24px;
+  border-radius: 48px;
   overflow: hidden;
   margin-bottom: 1.5rem;
   img {
@@ -306,6 +306,7 @@ header {
 .portfolios_card_heading {
   font-size: clamp(1.25rem, 1rem + 1vw, 1.5rem);
   font-weight: 700;
+  line-height: 100%;
   color: var(--olive-800);
   margin-bottom: 0.75rem;
   line-height: 0.8;
@@ -604,6 +605,20 @@ header {
     width: 95px;
   }
   /* about end */
+  /* portfolios start */
+  .portfolios_card {
+    margin-bottom: 24px;
+  }
+  .portfolios_card_img_div {
+    margin-bottom: 12px;
+    border-radius: 24px;
+  }
+  .portfolios_card_heading {
+    line-height: 100%;
+    font-size: 20px;
+  }
+  /* portfolios end */
+
   .footer-main-div {
     display: flex;
     align-items: start;
