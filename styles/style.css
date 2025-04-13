@@ -193,6 +193,7 @@ header {
   top: 100%;
   transform: translateY(-100%);
 }
+
 .left_top_shape {
   position: absolute;
   top: 0;
@@ -479,4 +480,8 @@ header {
     display: none;
   }
   /* My Portfolios section end */
+
+  .rainbow {
+    display: none;
+  }
 }
